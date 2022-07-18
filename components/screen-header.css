@@ -1,0 +1,79 @@
+.screen-header {
+  position: fixed;
+  background-color: white;
+  top: 0px;
+  padding: 50px 20px 15px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.screen-header__text {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.screen-header__icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.screen-header__icon i {
+  font-size: 22px;
+  margin-left: 25px;
+  color: var(--black);
+}
+
+@keyframes scaleChange {
+  from {
+    transform: none;
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+
+.screen-header__icon .fa-magnifying-glass:hover,
+.screen-header__icon .fa-qrcode:hover,
+.screen-header__icon .fa-comment-dots:hover {
+  animation: scaleChange 0.3s ease-in forwards;
+}
+
+@keyframes iconColorChange {
+  0% {
+    color: #00ff48;
+  }
+  25% {
+    color: blue;
+  }
+  50% {
+    color: rgb(229, 255, 0);
+  }
+  75% {
+    color: rgb(255, 0, 247);
+  }
+  100% {
+    color: aqua;
+  }
+}
+
+.screen-header__icon .fa-music:hover {
+  animation: iconColorChange 1.5s ease-in infinite;
+}
+
+@keyframes rotateGear {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icon .fa-gear:hover {
+  animation: rotateGear 1s ease-in;
+}

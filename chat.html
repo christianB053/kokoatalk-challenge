@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Chat-Ice Cream Talk</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__row">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__row">
+        <span>6:35</span>
+      </div>
+      <div class="status-bar__row">
+        <span>100%</span>
+        <i class="fa-solid fa-battery-full fa-lg"></i>
+      </div>
+    </div>
+
+    <header class="alt-screen-header">
+      <div class="alt-screen-header__column">
+        <a href="chats.html"><i class="fa-solid fa-chevron-left fa-lg"></i></a>
+      </div>
+      <div class="alt-screen-header__column">
+        <span>백곰이</span>
+      </div>
+      <div class="alt-screen-header__column">
+        <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">2022년 7월 19일</div>
+
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message-row__info">
+            <span class="message-row__bubble">백곰아 생일 축하해!</span>
+            <span class="message-row__time">3:00</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row">
+        <img class="message-row__img" src="img/백곰이.jpg" />
+        <div class="message-row__content">
+          <span class="message-row__author">백곰이</span>
+          <div class="message-row__info">
+            <span class="message-row__bubble">고마워😆</span>
+            <span class="message-row__time">3:10</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="fa-solid fa-plus fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="메세지를 입력하세요." />
+        <i class="fa-regular fa-face-smile fa-lg"></i>
+        <i class="fa-solid fa-hashtag fa-lg"></i>
+      </div>
+    </form>
+
+    <div id="mobile-screen">
+      <span>화면 크기를 줄여 주세요. <i class="fa-solid fa-desktop"></i></span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/4938a0eb9e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

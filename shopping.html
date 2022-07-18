@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Shopping-Ice Cream Talk</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__row">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__row">
+        <span>6:35</span>
+      </div>
+      <div class="status-bar__row">
+        <span>100%</span>
+        <i class="fa-solid fa-battery-full fa-lg"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <span class="screen-header__text">쇼핑</span>
+      <div class="screen-header__icon">
+        <i class="fa-solid fa-qrcode fa-lg"></i>
+        <i class="fa-solid fa-music fa-lg"></i>
+        <a href="setting.html"> <i class="fa-solid fa-gear fa-lg"></i></a>
+      </div>
+    </header>
+
+    <main class="main-screen shopping-screen">
+      <section class="shopping">
+        <ul class="shopping__list">
+          <li class="shopping__list--column">
+            <i class="fa-solid fa-gift fa-2x"></i>
+            <span>선물하기</span>
+          </li>
+          <li class="shopping__list--column">
+            <i class="fa-solid fa-store fa-2x"></i>
+            <span>쇼핑하기</span>
+          </li>
+          <li class="shopping__list--column">
+            <i class="fa-solid fa-circle-play fa-2x"></i>
+            <span>쇼핑라이브</span>
+          </li>
+          <li class="shopping__list--column">
+            <i class="fa-solid fa-money-check fa-2x"></i>
+            <span>쿠폰함</span>
+          </li>
+          <li class="shopping__list--column">
+            <i class="fa-regular fa-heart fa-2x"></i>
+            <span>찜</span>
+          </li>
+        </ul>
+      </section>
+      <section class="shopping-ad">
+        <div class="shopping-ad__content">
+          <span class="shopping-ad__title">LIVE 특가</span>
+          <span class="shopping-ad__text">강아지 옷 파격 혜택!</span>
+          <span class="shopping-ad__sale">최대 70% 할인</span>
+        </div>
+        <img class="shopping-ad__img" src="img/event.jpg" />
+      </section>
+
+      <form class="shopping-search">
+        <div class="shopping-search__content">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="검색하세요 :)" />
+        </div>
+      </form>
+
+      <section class="shopping-suggestion">
+        <div class="shopping-suggestion__column">
+          <span class="shopping-suggestion__text">추천</span>
+          <i class="fa-solid fa-circle-exclamation"></i>
+        </div>
+        <div class="shopping-suggestion__column">
+          <span class="shopping-suggestion__title">민소매</span>
+          <span class="shopping-suggestion__title">장난감</span>
+          <span class="shopping-suggestion__title">강아지 수영복</span>
+          <span class="shopping-suggestion__title">잠옷</span>
+        </div>
+      </section>
+
+      <div class="shopping-title">
+        <h1>상품</h1>
+        <div class="shopping-title__more">
+          <span>전체보기</span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+
+      <section class="product">
+        <div class="shopping-product">
+          <div class="shopping-product__column">
+              <img class="shopping-product__img" src="img/강아지 수영복.jpg" />
+              <div class="shopping-product__text">
+                <span class="shopping-product__text--title">강아지 수영복</span>
+                <span class="shopping-product__text--price">1,000원</span>
+              </div>
+          </div>
+          <div class="shopping-product__column">
+              <img class="shopping-product__img" src="img/강아지옷.jpg" />
+              <div class="shopping-product__text">
+                <span class="shopping-product__text--title">강아지 옷</span>
+                <span class="shopping-product__text--price">2,000원</span>
+              </div>
+          </div>
+        </div>
+        <div class="shopping-product">
+          <div class="shopping-product__column">
+              <img class="shopping-product__img" src="img/장난감.jpg" />
+              <div class="shopping-product__text">
+                <span class="shopping-product__text--title">강아지 장난감</span>
+                <span class="shopping-product__text--price">3,000원</span>
+              </div>
+          </div>
+          <div class="shopping-product__column">
+              <img class="shopping-product__img" src="img/강아지 튜브.jpg" />
+              <div class="shopping-product__text">
+                <span class="shopping-product__text--title">강아지 튜브</span>
+                <span class="shopping-product__text--price">4,000원</span>
+              </div>
+        </div>
+      </section>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a href="friends.html"><i class="fa-regular fa-user fa-2x"></i></a>
+        </li>
+        <li class="nav__btn">
+          <div class="nav__notification badge">1</div>
+          <a href="chats.html"><i class="fa-brands fa-rocketchat fa-2x"></i></a>
+        </li>
+        <li class="nav__btn">
+          <a href="shopping.html"
+            ><i class="fa-solid fa-cart-arrow-down fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a href="more.html"><i class="fa-solid fa-ellipsis fa-2x"></i></a>
+          <div class="nav__dot"></div>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="mobile-screen">
+      <span>화면 크기를 줄여 주세요. <i class="fa-solid fa-desktop"></i></span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/4938a0eb9e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

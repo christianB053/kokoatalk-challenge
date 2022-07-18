@@ -1,0 +1,66 @@
+.friends-screen__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: var(--opacity);
+}
+
+.friends-screen__text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.friends-screen__text span {
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 3px;
+}
+
+.friends-screen__text i {
+  color: red;
+}
+
+.friends-screen__text .fa-star {
+  color: var(--yellow);
+}
+
+@keyframes splashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+#splash-screen {
+  background-color: white;
+  font-size: 130px;
+  color: var(--sky);
+  position: absolute;
+  top: 0px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  z-index: 99;
+  align-items: center;
+  animation: splashScreen 0.7s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes moveIcon {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: rotateZ(-25deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+#splash-screen i {
+  animation: moveIcon 0.5s ease-in;
+}

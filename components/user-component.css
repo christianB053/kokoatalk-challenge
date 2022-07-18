@@ -1,0 +1,126 @@
+.user-component {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user-component--padding {
+  padding: 20px 0px;
+}
+.user-component--border {
+  border-bottom: 1px solid var(--gray);
+}
+
+.user-component__column {
+  display: flex;
+  align-items: center;
+}
+.user-component__avatar {
+  height: 70px;
+  width: 70px;
+  border-radius: 35%;
+  margin-right: 10px;
+}
+
+.user-component__title {
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.user-component__music {
+  font-size: 13px;
+  border: 2px solid var(--sky);
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.user-component__avatar--xs {
+  height: 50px;
+  width: 50px;
+}
+
+.user-component__music {
+  font-size: 13px;
+  border: 2px solid var(--sky);
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.user-component__music--title {
+  margin-right: 5px;
+}
+
+.user-component__title--xs {
+  font-size: 15px;
+}
+
+.friends-screen__title--padding {
+  padding-bottom: 20px;
+}
+
+@keyframes playIconColorChange {
+  0% {
+    color: #00ff48;
+  }
+  25% {
+    color: blue;
+  }
+  50% {
+    color: rgb(229, 255, 0);
+  }
+  75% {
+    color: rgb(255, 0, 247);
+  }
+  100% {
+    color: aqua;
+  }
+}
+.user-component__music:hover i {
+  animation: playIconColorChange 1.5s ease-in infinite;
+}
+
+@keyframes borderColorChange {
+  0% {
+    border-color: #00ff48;
+  }
+  25% {
+    border-color: blue;
+  }
+  50% {
+    border-color: var(--yellow);
+  }
+  75% {
+    border-color: rgb(255, 0, 247);
+  }
+  100% {
+    border-color: aqua;
+  }
+}
+.user-component__music:hover {
+  animation: borderColorChange 1.5s ease-in infinite;
+}
+
+.user-component__avatar--sm {
+  height: 60px;
+  width: 60px;
+}
+
+.user-component__subtitle--sm,
+.user-component__content div {
+  margin-top: 10px;
+}
+
+.user-component__title--sm {
+  font-size: 19px;
+}
+
+.user-component__subtitle--sm {
+  font-size: 15px;
+}
+
+.user-component__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}

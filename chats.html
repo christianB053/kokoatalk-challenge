@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Chat-Ice Cream Talk</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__row">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__row">
+        <span>6:35</span>
+      </div>
+      <div class="status-bar__row">
+        <span>100%</span>
+        <i class="fa-solid fa-battery-full fa-lg"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <span class="screen-header__text">채팅</span>
+      <div class="screen-header__icon">
+        <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+        <i class="fa-regular fa-comment-dots"></i>
+        <i class="fa-solid fa-music fa-lg"></i>
+        <a href="setting.html"> <i class="fa-solid fa-gear fa-lg"></i></a>
+      </div>
+    </header>
+
+    <main class="chat-screen">
+      <a href="chat.html">
+        <div class="user-component user-component__hover">
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar user-component__avatar--sm"
+              src="img/백곰이.jpg"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--sm">
+                백곰이
+              </h4>
+              <h6 class="user-component__subtitle user-component__subtitle--sm">
+                고마워😆
+              </h6>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <div class="user-component__content">
+              <span class="user-component__content--time">3:10</span>
+              <div class="badge">1</div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <div class="user-component user-component--padding">
+        <div class="user-component__column">
+          <img
+            class="user-component__avatar user-component__avatar--sm"
+            src="img/우탄이.jpg"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title user-component__title--sm">
+              우탄이
+            </h4>
+            <h6 class="user-component__subtitle user-component__subtitle--sm">
+              언니 안뇽!
+            </h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <div class="user-component__content">
+            <span class="user-component__content--time">12:40</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a href="friends.html"><i class="fa-regular fa-user fa-2x"></i></a>
+        </li>
+        <li class="nav__btn">
+          <div class="nav__notification badge">1</div>
+          <a href="chats.html"><i class="fa-solid fa-comment fa-2x"></i></a>
+        </li>
+        <li class="nav__btn">
+          <a href="shopping.html"
+            ><i class="fa-solid fa-cart-shopping fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a href="more.html"><i class="fa-solid fa-ellipsis fa-2x"></i></a>
+          <div class="nav__dot"></div>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="mobile-screen">
+      <span>화면 크기를 줄여 주세요. <i class="fa-solid fa-desktop"></i></span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/4938a0eb9e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
