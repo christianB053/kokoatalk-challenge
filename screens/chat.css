@@ -123,6 +123,8 @@
   justify-content: space-between;
   align-items: center;
   color: var(--pink);
+  transition: transform 0.3s ease-in;
+  border-top: 5px solid var(--pink);
 }
 
 .reply__column:first-child {
@@ -145,6 +147,7 @@
   border-radius: 10px;
   transition: all;
   box-sizing: border-box;
+  transition: all 0.3s ease-in;
 }
 
 .reply__column input:focus,
@@ -165,4 +168,25 @@
 .reply__column .fa-hashtag {
   bottom: 35px;
   right: 15px;
+}
+
+.reply:focus-within {
+  transform: translateY(80px);
+}
+
+.reply .fa-plus,
+.reply .fa-face-smile,
+.reply .fa-hashtag {
+  transition: opacity 0.1s ease-in;
+}
+
+.reply:focus-within .fa-plus,
+.reply:focus-within .fa-face-smile,
+.reply:focus-within .fa-hashtag {
+  opacity: 0;
+}
+
+.reply:focus-within input {
+  width: 95vw;
+  transform: translateX(-32px) translateY(-80px);
 }

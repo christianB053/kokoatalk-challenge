@@ -46,18 +46,23 @@
 @keyframes iconColorChange {
   0% {
     color: #00ff48;
+    transform: none;
   }
   25% {
     color: blue;
+    transform: scale(1.1);
   }
   50% {
     color: rgb(229, 255, 0);
+    transform: none;
   }
   75% {
     color: rgb(255, 0, 247);
+    transform: scale(1.1);
   }
   100% {
     color: aqua;
+    transform: none;
   }
 }
 
